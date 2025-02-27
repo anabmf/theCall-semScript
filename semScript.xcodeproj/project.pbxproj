@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		64B670AF2D6DDF7B00684D82 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B670AE2D6DDF7B00684D82 /* main.swift */; };
+		64E176D72D708EA1003CBA3F /* elemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E176D62D708EA1003CBA3F /* elemento.swift */; };
+		64E176D92D7093D1003CBA3F /* estado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E176D82D7093D1003CBA3F /* estado.swift */; };
+		64E176DB2D70967C003CBA3F /* pista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E176DA2D70967C003CBA3F /* pista.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		64B670AB2D6DDF7B00684D82 /* semScript */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = semScript; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B670AE2D6DDF7B00684D82 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		64E176D62D708EA1003CBA3F /* elemento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elemento.swift; sourceTree = "<group>"; };
+		64E176D82D7093D1003CBA3F /* estado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estado.swift; sourceTree = "<group>"; };
+		64E176DA2D70967C003CBA3F /* pista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pista.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				64B670AE2D6DDF7B00684D82 /* main.swift */,
+				64E176D62D708EA1003CBA3F /* elemento.swift */,
+				64E176D82D7093D1003CBA3F /* estado.swift */,
+				64E176DA2D70967C003CBA3F /* pista.swift */,
 			);
 			path = semScript;
 			sourceTree = "<group>";
@@ -120,7 +129,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E176D92D7093D1003CBA3F /* estado.swift in Sources */,
+				64E176D72D708EA1003CBA3F /* elemento.swift in Sources */,
 				64B670AF2D6DDF7B00684D82 /* main.swift in Sources */,
+				64E176DB2D70967C003CBA3F /* pista.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
