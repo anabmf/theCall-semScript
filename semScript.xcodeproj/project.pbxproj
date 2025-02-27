@@ -11,6 +11,7 @@
 		64E176D72D708EA1003CBA3F /* elemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E176D62D708EA1003CBA3F /* elemento.swift */; };
 		64E176D92D7093D1003CBA3F /* estado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E176D82D7093D1003CBA3F /* estado.swift */; };
 		64E176DB2D70967C003CBA3F /* pista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E176DA2D70967C003CBA3F /* pista.swift */; };
+		64E176DD2D70A5B7003CBA3F /* historia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E176DC2D70A5B7003CBA3F /* historia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		64E176D62D708EA1003CBA3F /* elemento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elemento.swift; sourceTree = "<group>"; };
 		64E176D82D7093D1003CBA3F /* estado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estado.swift; sourceTree = "<group>"; };
 		64E176DA2D70967C003CBA3F /* pista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pista.swift; sourceTree = "<group>"; };
+		64E176DC2D70A5B7003CBA3F /* historia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				64E176D62D708EA1003CBA3F /* elemento.swift */,
 				64E176D82D7093D1003CBA3F /* estado.swift */,
 				64E176DA2D70967C003CBA3F /* pista.swift */,
+				64E176DC2D70A5B7003CBA3F /* historia.swift */,
 			);
 			path = semScript;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			files = (
 				64E176D92D7093D1003CBA3F /* estado.swift in Sources */,
 				64E176D72D708EA1003CBA3F /* elemento.swift in Sources */,
+				64E176DD2D70A5B7003CBA3F /* historia.swift in Sources */,
 				64B670AF2D6DDF7B00684D82 /* main.swift in Sources */,
 				64E176DB2D70967C003CBA3F /* pista.swift in Sources */,
 			);

@@ -1,10 +1,3 @@
-//
-//  elemento.swift
-//  semScript
-//
-//  Created by Aluno 02 on 27/02/25.
-//
-
 import Foundation
 
 class Opcao {
@@ -41,7 +34,7 @@ class Dialogo {
         
         // Percorre e escreve a lista de opções
         for (indice, opcao) in opcoes.enumerated() {
-            print("\(indice) > \(opcao.texto)")
+            print("\(indice+1) > \(opcao.texto)")
         }
     }
 }
