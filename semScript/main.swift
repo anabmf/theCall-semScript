@@ -10,7 +10,7 @@ func inputIntervalo(a: Int, b: Int) -> Int {
         
         guard let inputValido = input, let numero = Int(inputValido), numero >= a, numero <= b else {
             //
-            print("Entrada inválida. Insira um número entre \(a) e \(b).")
+            print("\u{001B}[31mEntrada inválida. Insira um número entre \(a) e \(b).\u{001B}[0m")
             continue
         }
         
@@ -32,7 +32,10 @@ while(dialogoAtual != nil) {
         break
     }
     
-    let escolha = inputIntervalo(a: 1, b: 2)
+    let escolha = inputIntervalo(a: 1, b: dialogoAtual!.opcoes!.count)
     dialogoAtual = dialogoAtual!.opcoes![escolha-1].continuacao
 }
+
+
+// 
 
