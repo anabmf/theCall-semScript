@@ -31,7 +31,7 @@ class Dialogo {
             for palavra in palavras {
                 print(palavra, terminator: " ")
                 fflush(stdout)
-                usleep(100000)
+                usleep(50000)
             }
             print("\n")
             fflush(stdout)
@@ -43,17 +43,17 @@ class Dialogo {
         }
 
         // Espera de 1 segundo antes de imprimir as opções
-        usleep(2000000)
+        usleep(1500000)
         
         // Divisor de texto e opções
-        print("\n\u{001B}[36m-----------------------------------\n")
+        print("\n\u{001B}[36m----------------------------------------------------------------------\n")
         
         // Percorre e escreve a lista de opções
         for (indice, opcao) in opcoes.enumerated() {
-            print("\(indice + 1) > \(opcao.texto)")
+            print("\u{001B}[1m\(indice + 1)\u{001B}[0m\u{001B}[36m > \(opcao.texto)")
         }
         
-        print("\n-----------------------------------\u{001B}[0m\n")
+        print("\n----------------------------------------------------------------------\u{001B}[0m\n")
     }
 }
 
