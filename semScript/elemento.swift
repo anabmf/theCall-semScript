@@ -69,3 +69,17 @@ class ElementoPista: Dialogo {
         EstadoJogo.atualizarPista(pista: pista, valor: true)
     }
 }
+
+class EfeitoCustomizado: Dialogo {
+    let efeito: () -> Void
+    
+    init(descricao: [String], opcoes: [Opcao]?, efeito: @escaping () -> Void) {
+        self.efeito = efeito
+        
+        super.init(descricao: descricao, opcoes: opcoes)
+    }
+    
+    override func efeitoColateral() {
+        efeito()
+    }
+}

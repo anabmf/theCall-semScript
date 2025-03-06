@@ -49,7 +49,6 @@ let texto7_2 = "Já tomei minha decisão. Não vou mais seguir nesse caminho. A 
 let texto7_3 = "– Benedito"
 let texto7_4 = "Essa carta deixa claro que a obra em questão, 'Passeio ao Crepúsculo', foi parte do esquema de falsificação, mas o avô decidiu não vendê-la, focando na sua nova vida como pai."
 
-
 // ARVORE
 
 let dialogo7 = Dialogo(
@@ -101,10 +100,11 @@ let dialogo2 = Dialogo(
     ]
 )
 
+
 let dialogo1 = Dialogo(
     descricao: [texto1_1, texto1_2, texto1_3],
     opcoes: [
         Opcao(texto: opcao1_1, continuacao: dialogo2),
-        // TODO ADICIONAR O OUTRO FIM
+        Opcao(texto: opcao1_2, continuacao: final49)
     ]
 )
