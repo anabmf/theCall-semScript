@@ -5,5 +5,6 @@ import Foundation
 enum Pista: CaseIterable {
     case tinta
     case carta
+    case dalila
     case romance
 }

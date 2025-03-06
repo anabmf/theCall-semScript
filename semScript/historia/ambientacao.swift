@@ -35,7 +35,7 @@ let opcao5_3 = "Acusar suspeito Final"
 
 
 let texto7_1 = "Você explora a casa e encontra uma carta escondida entre livros antigos. Ela está um pouco amassada, mas ainda legível. O conteúdo diz:"
-let texto7_2 = "\u{001B}[34mJá tomei minha decisão. Não vou mais seguir nesse caminho. A obra de Van Gogh, 'Passeio ao Crepúsculo', pode parecer tentadora, mas é uma falsificação. Não importa o quanto ela valha, não posso continuar nesse esquema.\nEstou prestes a ser pai e, quando meu filho nascer, quero que ele tenha uma vida limpa, sem os erros que cometi. Não vou vender a obra, nem me envolver em mais nada disso. Vou deixar esse negócio para trás, por minha família e pelo que é certo.\nNão me procure mais, não voltarei atrás."
+let texto7_2 = "\u{001B}[33mJá tomei minha decisão. Não vou mais seguir nesse caminho. A obra de Van Gogh, 'Passeio ao Crepúsculo', pode parecer tentadora, mas é uma falsificação. Não importa o quanto ela valha, não posso continuar nesse esquema.\nEstou prestes a ser pai e, quando meu filho nascer, quero que ele tenha uma vida limpa, sem os erros que cometi. Não vou vender a obra, nem me envolver em mais nada disso. Vou deixar esse negócio para trás, por minha família e pelo que é certo.\nNão me procure mais, não voltarei atrás."
 let texto7_3 = "– Benedito\u{001B}[0m"
 let texto7_4 = "Essa carta deixa claro que a obra em questão, 'Passeio ao Crepúsculo', foi parte do esquema de falsificação, mas o avô decidiu não vendê-la, focando na sua nova vida como pai."
 
