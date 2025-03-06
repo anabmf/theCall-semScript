@@ -30,8 +30,11 @@ class Dialogo {
             let palavras = texto.split(separator: " ")
             for palavra in palavras {
                 print(palavra, terminator: " ")
+                fflush(stdout)
                 usleep(100000)
             }
+            print("\n")
+            fflush(stdout)
         }
         
         // Verifica se opcoes é nil e retorna caso seja
@@ -43,7 +46,7 @@ class Dialogo {
         usleep(2000000)
         
         // Divisor de texto e opções
-        print("\n\n\u{001B}[36m-----------------------------------\n")
+        print("\n\u{001B}[36m-----------------------------------\n")
         
         // Percorre e escreve a lista de opções
         for (indice, opcao) in opcoes.enumerated() {
