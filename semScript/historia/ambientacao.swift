@@ -36,14 +36,6 @@ let opcao5_5 = "Explorar Casa"
 let opcao5_6 = "Acusar suspeito Final"
 
 
-let texto6_1 = "Com uma postura confiante, você, a renomada detetive Ana Lise, aponta o verdadeiro culpado:"
-let opcao6_1 = "Cristiano"
-let opcao6_2 = "Dálila"
-let opcao6_3 = "Cynthia"
-let opcao6_4 = "César"
-let opcao6_5 = "DuLance"
-
-
 let texto7_1 = "Você explora a casa e encontra uma carta escondida entre livros antigos. Ela está um pouco amassada, mas ainda legível. O conteúdo diz:"
 let texto7_2 = "Já tomei minha decisão. Não vou mais seguir nesse caminho. A obra de Van Gogh, 'Passeio ao Crepúsculo', pode parecer tentadora, mas é uma falsificação. Não importa o quanto ela valha, não posso continuar nesse esquema.\nEstou prestes a ser pai e, quando meu filho nascer, quero que ele tenha uma vida limpa, sem os erros que cometi. Não vou vender a obra, nem me envolver em mais nada disso. Vou deixar esse negócio para trás, por minha família e pelo que é certo.\nNão me procure mais, não voltarei atrás."
 let texto7_3 = "– Benedito"
@@ -61,21 +53,20 @@ let dialogo7 = Dialogo(
     opcoes: nil
 )
 
-let dialogo6 = Dialogo(
-    descricao: [texto6_1],
-    opcoes: nil
-)
-
 let dialogo5 = Dialogo(
     descricao: [texto5_1, texto5_2],
-    opcoes: nil
+    opcoes: [
+        Opcao(texto: opcao5_1, continuacao: ),
+    ]
 )
 
-let dialogo4 = Dialogo(
+let dialogo4 = ElementoPista(
     descricao: [texto4_1, texto4_2],
     opcoes: [
         Opcao(texto: opcao2_3, continuacao: dialogo5),
-    ]
+    ],
+    pista: .tinta
+    
 )
 
 let dialogo3 = Dialogo(

@@ -11,7 +11,7 @@ class Opcao {
 }
 
 class Dialogo {
-    let descricao: [String]  // Agora é uma lista de Strings
+    var descricao: [String]  // Agora é uma lista de Strings
     var opcoes: [Opcao]?
     
     init(descricao: [String], opcoes: [Opcao]?) {
@@ -74,15 +74,15 @@ class ElementoPista: Dialogo {
 }
 
 class EfeitoCustomizado: Dialogo {
-    let efeito: () -> Void
+    let efeito: (EfeitoCustomizado) -> Void
     
-    init(descricao: [String], opcoes: [Opcao]?, efeito: @escaping () -> Void) {
+    init(descricao: [String], opcoes: [Opcao]?, efeito: @escaping (EfeitoCustomizado) -> Void) {
         self.efeito = efeito
         
         super.init(descricao: descricao, opcoes: opcoes)
     }
     
     override func efeitoColateral() {
-        efeito()
+        efeito(self)
     }
 }

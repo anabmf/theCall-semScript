@@ -1,4 +1,3 @@
-
 // FINAL 49
 let texto49_1 = "Você decidiu não ajudar o Policial Azevedo, afinal está no seu período de folga."
 let texto49_2 = "Você percebe desapontamento nas expressões dele."
@@ -68,4 +67,43 @@ let texto47_2 = "Você: Dalila, depois de toda a investigação, as evidências 
 let texto47_3 = "Dalila: Você não tem direito de me acusar assim! Eu só... eu só queria proteger meu avô! O que ele fez, ele se arrependeu! E tive a oportunidade perfeita, foi tão simples! Só tive que jogar tinta naquele quadro que não valia nada!"
 let texto47_4 = "Você: Você não só queria proteger a memória do seu avô, Dalila. Você é cúmplice da falsificação. Você sabia o que estava fazendo, e agora as provas falam por si mesmas."
 let texto47_5 = "Cynthia: Isso não pode estar acontecendo! Minha filha não fez nada disso! Ela não é culpada, não pode ser!"
+let texto47_6 = "Dalila: Eu não podia deixar que o legado do avô fosse manchado, mãe. Não sabia o que fazer. Foi a única maneira de proteger ele, de proteger a memória dele."
+let texto47_7 = "Você: Dalila, você vai ser presa pela destruição da obra. A justiça será feita. Não há mais como escapar."
+let texto47_8 = "Dalila, a verdadeira culpada, é finalmente presa por seus crimes. O detetive sente uma sensação de alívio, sabendo que a verdade prevaleceu. \nVocê, depois de toda a tensão, decide fazer uma pausa e ir até a sorveteria para comemorar o sucesso da investigação."
 
+
+let texto48_1 = "Você olha para Dalila com uma expressão pensativa, mas ainda falta uma prova concreta para acusá-la diretamente."
+let texto48_2 = "Você: Dalila, as evidências não são claras, mas você tem muitas coisas contra si. O incêndio, a distração no momento perfeito... A motivação que você tinha para proteger o legado do seu avô é óbvia. E, com isso, a oportunidade também estava ao seu alcance."
+let texto48_3 = "Dalila: Você está me acusando sem provas, detetive. Não tenho como ser culpada. Todos estavam em pânico, tentando salvar o que era mais importante. A senhora está fazendo uma suposição sem fundamento."
+let texto48_4 = "Cynthia: Minha filha não fez nada de errado, detetive. Eu tenho plena confiança nela. O senhor não pode acusá-la sem provas."
+let texto48_5 = "Com isso, Dalila segue impune, mantendo sua fachada de inocência, enquanto sua mãe a defende. A detetive, sem provas, é forçada a encerrar o caso sem uma conclusão. O crime permanece sem resposta, e você sente que talvez tenha perdido algo importante."
+
+func finalDalila(self: EfeitoCustomizado) {
+    if EstadoJogo.atual.pistasEncontradas[.carta]! && EstadoJogo.atual.pistasEncontradas[.tinta]! {
+        self.descricao = [texto47_1, texto47_2, texto47_3, texto47_4, texto47_5, texto47_6, texto47_7, texto47_8,]
+    } else {
+        self.descricao = [texto48_1, texto48_2, texto48_3, texto48_4, texto48_5]
+    }
+}
+
+let final48e47 = EfeitoCustomizado(descricao: [], opcoes: nil, efeito: finalDalila)
+
+
+// ACUSAR SUSPEITOS
+let texto6_1 = "Com uma postura confiante, você, a renomada detetive Ana Lise, aponta o verdadeiro culpado:"
+let opcao6_1 = "Cristiano"
+let opcao6_2 = "Dálila"
+let opcao6_3 = "Cynthia"
+let opcao6_4 = "César"
+let opcao6_5 = "DuLance"
+
+let dialogo6 = Dialogo(
+    descricao: [texto6_1],
+    opcoes: [
+        Opcao(texto: opcao6_1, continuacao: final45),
+        Opcao(texto: opcao6_2, continuacao: final48e47),
+        Opcao(texto: opcao6_3, continuacao: final44),
+        Opcao(texto: opcao6_4, continuacao: final46),
+        Opcao(texto: opcao6_5, continuacao: final43),
+    ]
+)

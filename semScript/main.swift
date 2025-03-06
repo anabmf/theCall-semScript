@@ -24,8 +24,8 @@ func inputIntervalo(a: Int, b: Int) -> Int {
 var dialogoAtual: Dialogo? = dialogo1
 
 while(dialogoAtual != nil) {
-    dialogoAtual!.escrever()
     dialogoAtual!.efeitoColateral()
+    dialogoAtual!.escrever()
 
     // intervalo fixo para teste
     if dialogoAtual!.opcoes == nil {
