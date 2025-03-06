@@ -54,3 +54,18 @@ let texto46_2 = "Você: César, você sempre viveu de forma irresponsável, se d
 let texto46_3 = "César: Ah, detetive, você me pega no ponto fraco, não é? Pode até ser que eu goste de uma vida boa, quem não gosta? Mas acusar a mim de roubar o quadro... Isso não tem nada a ver comigo. Eu não sou um criminoso."
 let texto46_4 = "Você: Não se engane, o incêndio foi iniciado com um isqueiro. O seu isqueiro. E no momento do incêndio, você teve a oportunidade perfeita para pegar o quadro e desaparecer com ele."
 let texto46_5 = "César: Eu… Eu perdi o isqueiro, sim, mas isso não significa que eu tenha usado para o incêndio, detetive. Você está apenas tentando achar uma explicação. Eu não tenho nada a ver com o desaparecimento do quadro."
+let texto46_6 = "César tenta argumentar, mas a polícia o leva enquanto ele continua a protestar sua inocência. Sua vida de festas e luxos, agora, seria trocada por uma longa estadia atrás das grades. Você sentia uma leve satisfação em ter resolvido o caso, mas, à medida que a noite se arrastava, uma sensação de dúvida se instalava. Algo não se encaixava bem. Você tenta aliviar a tensão. Vai até a sorveteria, toma um sorvete, e tenta esquecer os detalhes que ainda a incomodam."
+
+let final46 = Dialogo(
+    descricao: [texto46_1, texto46_2, texto46_3, texto46_3, texto46_4, texto46_5, texto46_6],
+    opcoes: nil
+)
+
+
+// FINAL DALILA
+let texto47_1 = "Você olha para Dalila com uma expressão decidida. As evidências finalmente se encaixaram."
+let texto47_2 = "Você: Dalila, depois de toda a investigação, as evidências não mentem. Encontramos gotas de tinta no estoque. E, além disso, temos a carta de seu avô, que confessa o envolvimento dele na falsificação do quadro. Você sabia que ele era falso, e você fez o que achava necessário para proteger o legado dele."
+let texto47_3 = "Dalila: Você não tem direito de me acusar assim! Eu só... eu só queria proteger meu avô! O que ele fez, ele se arrependeu! E tive a oportunidade perfeita, foi tão simples! Só tive que jogar tinta naquele quadro que não valia nada!"
+let texto47_4 = "Você: Você não só queria proteger a memória do seu avô, Dalila. Você é cúmplice da falsificação. Você sabia o que estava fazendo, e agora as provas falam por si mesmas."
+let texto47_5 = "Cynthia: Isso não pode estar acontecendo! Minha filha não fez nada disso! Ela não é culpada, não pode ser!"
+
