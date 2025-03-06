@@ -83,20 +83,44 @@ let dialogo14 = Dialogo(
     opcoes: [conversar_com_outros_suspeitos_cesar]
 )
 
+let dialogo13 = Dialogo(
+    descricao: [texto13_1, texto13_2, texto13_3, texto13_4, texto13_5, texto13_6, texto13_7, texto13_8],
+    opcoes: [
+        Opcao(texto: opcao13_1, continuacao: dialogo14),
+        Opcao(texto: opcao13_2, continuacao: dialogo15)
+    ]
+)
+
 let dialogo12 = Dialogo(
     descricao: [texto9_1, texto9_2, texto9_3, texto9_4, texto9_5, texto9_6, texto9_7],
     opcoes: [conversar_com_outros_suspeitos_cesar]
 )
 
 let dialogo11 = Dialogo(
-    descricao: [texto10_1, texto9_2, texto9_3, texto9_4, texto9_5, texto9_6, texto9_7],
+    descricao: [texto10_1, texto10_2, texto10_3, texto10_4, texto10_5, texto10_6],
+    opcoes: [
+        Opcao(texto: opcao8_1, continuacao: dialogo12),
+        conversar_com_outros_suspeitos_cesar
+    ]
+)
+
+let dialogo10 = Dialogo(
+    descricao: [texto10_1, texto10_2, texto10_3, texto10_4, texto10_5, texto10_6],
     opcoes: [conversar_com_outros_suspeitos_cesar]
+)
+
+let dialogo9 = Dialogo(
+    descricao: [texto9_1, texto9_2, texto9_3, texto9_4, texto9_5, texto9_6, texto9_7],
+    opcoes: [
+        Opcao(texto: opcao8_2, continuacao: dialogo10),
+        conversar_com_outros_suspeitos_cesar
+    ]
 )
 
 let dialogo8 = Dialogo(
     descricao: [texto8_1, texto8_2, texto8_3, texto8_4, texto8_5, texto8_6, texto8_7, texto8_8, texto8_9, texto8_10, texto8_11],
     opcoes: [
-        Opcao(texto: opcao8_1, continuacao: ),
-        Opcao(texto: opcao8_2, continuacao: ),
-        Opcao(texto: opcao8_3, continuacao: )
-])
+        Opcao(texto: opcao8_1, continuacao: dialogo9),
+        Opcao(texto: opcao8_2, continuacao: dialogo11),
+        Opcao(texto: opcao8_3, continuacao: dialogo13),
+    ])

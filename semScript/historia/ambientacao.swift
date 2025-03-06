@@ -48,3 +48,63 @@ let texto7_1 = "Você explora a casa e encontra uma carta escondida entre livros
 let texto7_2 = "Já tomei minha decisão. Não vou mais seguir nesse caminho. A obra de Van Gogh, 'Passeio ao Crepúsculo', pode parecer tentadora, mas é uma falsificação. Não importa o quanto ela valha, não posso continuar nesse esquema.\nEstou prestes a ser pai e, quando meu filho nascer, quero que ele tenha uma vida limpa, sem os erros que cometi. Não vou vender a obra, nem me envolver em mais nada disso. Vou deixar esse negócio para trás, por minha família e pelo que é certo.\nNão me procure mais, não voltarei atrás."
 let texto7_3 = "– Benedito"
 let texto7_4 = "Essa carta deixa claro que a obra em questão, 'Passeio ao Crepúsculo', foi parte do esquema de falsificação, mas o avô decidiu não vendê-la, focando na sua nova vida como pai."
+
+
+// ARVORE
+
+let dialogo7 = Dialogo(
+    descricao: [
+        texto7_1,
+        texto7_2,
+        texto7_3,
+        texto7_4
+    ],
+    opcoes: nil
+)
+
+let dialogo6 = Dialogo(
+    descricao: [texto6_1],
+    opcoes: nil
+)
+
+let dialogo5 = Dialogo(
+    descricao: [texto5_1, texto5_2],
+    opcoes: nil
+)
+
+let dialogo4 = Dialogo(
+    descricao: [texto4_1, texto4_2],
+    opcoes: [
+        Opcao(texto: opcao2_3, continuacao: dialogo5),
+    ]
+)
+
+let dialogo3 = Dialogo(
+    descricao: [texto3_1, texto3_2],
+    opcoes: [
+        Opcao(texto: opcao2_3, continuacao: dialogo5),
+    ]
+)
+
+let opcao_investigar_estoque = Opcao(texto: opcao2_2, continuacao: dialogo4)
+let opcao_investigar_banheiro = Opcao(texto: opcao2_3, continuacao: dialogo3)
+//dialogo3.opcoes!.append(opcao_investigar_estoque)
+//dialogo4.opcoes!.append(opcao_investigar_banheiro)
+
+
+let dialogo2 = Dialogo(
+    descricao: [texto2_1, texto2_2, texto2_3, texto2_4, texto2_5, texto2_6, texto2_7],
+    opcoes: [
+        opcao_investigar_banheiro,
+        opcao_investigar_estoque,
+        Opcao(texto: opcao2_3, continuacao: dialogo5),
+    ]
+)
+
+let dialogo1 = Dialogo(
+    descricao: [texto1_1, texto1_2, texto1_3],
+    opcoes: [
+        Opcao(texto: opcao1_1, continuacao: dialogo2),
+        // TODO ADICIONAR O OUTRO FIM
+    ]
+)

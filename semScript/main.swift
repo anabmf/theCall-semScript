@@ -21,7 +21,7 @@ func inputIntervalo(a: Int, b: Int) -> Int {
     
 }
 
-var dialogoAtual: Dialogo? = inicio_historia
+var dialogoAtual: Dialogo? = dialogo1
 
 while(dialogoAtual != nil) {
     dialogoAtual!.escrever()

@@ -12,7 +12,7 @@ class Opcao {
 
 class Dialogo {
     let descricao: [String]  // Agora é uma lista de Strings
-    let opcoes: [Opcao]?
+    var opcoes: [Opcao]?
     
     init(descricao: [String], opcoes: [Opcao]?) {
         self.descricao = descricao
