@@ -32,7 +32,6 @@ let texto10_3 = "César solta uma risada curta e balança a cabeça."
 let texto10_4 = "César: Ah, nada demais... Só uma brincadeira. Eu vivo uma vida um pouco além do meu alcance, sabe? Nunca me preocupo muito com o amanhã. Mas, como disse, gosto de manter as coisas leves. Quem sabe isso me impede de pensar muito sobre a bagunça em que me meto."
 let texto10_5 = "Ele toma outro gole do uísque e sorri de forma despreocupada, mas você nota um brilho de inquietação nos seus olhos."
 let texto10_6 = "César: Vamos deixar as finanças de lado, detetive. O que mais você quer saber sobre o incêndio e o sumiço da obra?"
-let opcao10_1 = "Conversar com outros suspeitos"
 
 
 let texto13_1 = "Você cruza os braços, inclinando a cabeça com um meio sorriso."
@@ -63,7 +62,41 @@ let texto15_5 = "O tom dele muda ligeiramente, e você sente que, apesar de tudo
 let texto15_6 = "Você: Bom, parece que você tem uma boa dose de segredos. Vou seguir meu caminho, César, mas quem sabe... em outra ocasião a gente revele mais um do outro."
 let texto15_7 = "César dá um sorriso enigmático, mas não diz mais nada. Ele te observa sair, mantendo aquele olhar que mistura desafio e algo mais."
 
+
 let texto16_1 = "Você decide conversar que já conversou o suficiente com César."
 
 
-let inicioCesar = Dialogo()
+// ARVORE
+
+let conversar_com_outros_suspeitos_cesar = Opcao(texto: "Conversar com outros suspeitos", continuacao: dialogo16)
+
+let dialogo16 = Dialogo(descricao: [texto16_1], opcoes: nil)
+
+let dialogo15 = ElementoPista(
+    descricao: [texto15_1, texto15_2, texto15_3, texto15_4, texto15_5, texto15_6, texto15_7],
+    opcoes: [conversar_com_outros_suspeitos_cesar],
+    pista: .romance
+)
+
+let dialogo14 = Dialogo(
+    descricao: [texto14_1, texto14_2, texto14_3, texto14_4, texto14_5, texto14_6],
+    opcoes: [conversar_com_outros_suspeitos_cesar]
+)
+
+let dialogo12 = Dialogo(
+    descricao: [texto9_1, texto9_2, texto9_3, texto9_4, texto9_5, texto9_6, texto9_7],
+    opcoes: [conversar_com_outros_suspeitos_cesar]
+)
+
+let dialogo11 = Dialogo(
+    descricao: [texto10_1, texto9_2, texto9_3, texto9_4, texto9_5, texto9_6, texto9_7],
+    opcoes: [conversar_com_outros_suspeitos_cesar]
+)
+
+let dialogo8 = Dialogo(
+    descricao: [texto8_1, texto8_2, texto8_3, texto8_4, texto8_5, texto8_6, texto8_7, texto8_8, texto8_9, texto8_10, texto8_11],
+    opcoes: [
+        Opcao(texto: opcao8_1, continuacao: ),
+        Opcao(texto: opcao8_2, continuacao: ),
+        Opcao(texto: opcao8_3, continuacao: )
+])
