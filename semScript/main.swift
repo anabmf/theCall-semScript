@@ -3,7 +3,7 @@ import Foundation
 
 
 func printarTitulo() {
-    print("\n\n\u{001B}[35m                _____ _                _           _             _   _  /\\/|         ______")
+    print("\n\u{001B}[35m                _____ _                _           _             _   _  /\\/|         ______")
     print("    /\\         |  __ (_)              | |         | |           | \\ | ||/\\/         |  ____|")
     print("   /  \\   ___  | |__) | _ __   ___ ___| | __ _  __| | __ _ ___  |  \\| | __ _  ___   | |__   ___  __ _ _   _  ___  ___ ___ _ __ ___")
     print("  / /\\ \\ / __| |  ___/ | '_ \\ / __/ _ \\ |/ _` |/ _` |/ _` / __| | . ` |/ _` |/ _ \\  |  __| / __|/ _` | | | |/ _ \\/ __/ _ \\ '_ ` _ \\")
@@ -36,7 +36,6 @@ func inputIntervalo(a: Int, b: Int) -> Int {
 var dialogoAtual: Dialogo? = dialogo1
 
 while true {
-    print("\u{001B}[H\u{001B}[2J")
     printarTitulo()
     
     while dialogoAtual != nil {
@@ -63,6 +62,7 @@ while true {
     EstadoJogo.atualizarPista(pista: .dalila, valor: false)
     EstadoJogo.atualizarPista(pista: .tinta, valor: false)
     EstadoJogo.atualizarPista(pista: .carta, valor: false)
+    print("\u{001B}[H\u{001B}[2J")
 }
 
 
